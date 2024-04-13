@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #DAA49A;
+
+}
+h1{
+    color: #373F51;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 4vmin;
+}
+p{
+    color:#373F51;
+    font-size: 2vmin;
+    font-family:Arial, Helvetica, sans-serif;
+}
+main{
+    background-color:#F8F1FF;
+    min-height: 40vmin;
+    min-width: 40vmin;
+    border-radius: 2vmin;
+    padding: 5vmin;
+}
+form{
+    margin: 2rem 0 0 0;
+}
+
+form select, button , input{
+    width: 100%;
+    border: none;
+    outline:none;
+    border-radius: 0.75rem;
+
+}
+
+form input{
+    border: 2px solid #D8DBE2;
+    font-size: 1.2rem;
+    height: 3rem;
+    padding-left: 0.5rem;
+    /* background-color: #D8DBE2; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+.dropdown i {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+.select-container img{
+    max-width: 2.5rem;
+}
+.select-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:8rem;
+    border-radius: 0.5rem;
+    border: 2px solid #D8DBE2;
+    background-color:white;
+}
+
+.select-container select{
+    font-size: 1.2rem;
+    width: auto;
+    /* background-color: #D8DBE2; */
+}
+
+form button{
+    margin-top: 4rem;
+    height: 3rem;
+    background-color:#58A4B0;
+    color:white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+form button:active{
+    background-color: #ADD7F6;
+}
+.msg {
+    text-align: center;
+    margin-top:4rem;
+    font-size: 1.3rem;
+    color: #373F51;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid #373F51;
+    border-radius: 0.5rem;
+    display: none;
+    padding: 1rem;
+    animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(calc(20% - 1rem));
+  }
+}
